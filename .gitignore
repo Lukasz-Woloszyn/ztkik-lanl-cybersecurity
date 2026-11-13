@@ -1,0 +1,24 @@
+# Ignorowanie wielogigabajtowych surowych plików LANL (700 MB - 40 GB), archiwów oraz binarnego cache'u NumPy
+data/raw/
+data/raw_lanl/*.gz
+data/raw_lanl/*.txt
+data/**/*.zip
+data/**/*.7z
+data/**/*.rar
+data/**/*.gz
+data/**/*.bz2
+data/raw_slice/auth_clean_slice.csv
+data/modified_for_enemy/auth_modified.csv
+data/received_from_enemy/lanl-auth-dataset-advanced-attacked
+data/received_from_enemy/cache/
+
+# Środowisko Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
