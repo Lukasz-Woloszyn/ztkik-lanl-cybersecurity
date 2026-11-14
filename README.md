@@ -15,6 +15,7 @@ Kompleksowe rozwiązanie projektowe realizowane w formule **Red Team vs. Blue Te
 * **Dokumenty Reasoning (szczegółowy opis krok po kroku jak myśleliśmy, co sprawdzaliśmy i jak dochodziliśmy do wyników):**
   * [reports/REASONING_RED_TEAM_NASZE_ATAKI.md](reports/REASONING_RED_TEAM_NASZE_ATAKI.md) – Tok rozumowania przy projektowaniu, ukrywaniu i walidacji naszych ataków (Etap 1).
   * [reports/REASONING_BLUE_TEAM_ATAKI_PRZECIWNIKA.md](reports/REASONING_BLUE_TEAM_ATAKI_PRZECIWNIKA.md) – Ścieżka śledcza krok po kroku przy odkrywaniu ataków grupy przeciwnej w pliku $75.87\text{ mln}$ wierszy (Etap 2).
+  * [reports/DOWOD_DETEKCJI_BEZ_BLEDU_SORTOWANIA.md](reports/DOWOD_DETEKCJI_BEZ_BLEDU_SORTOWANIA.md) – Dowód matematyczny i eksperymentalny potwierdzający wykrycie wszystkich $117$ rekordów przeciwnika nawet na pliku posortowanym czasowo (`mergesort` po `time`).
 * **Manifesty i wyekstrahowane anomalie:**
   * [data/secret_ground_truth/manifest.json](data/secret_ground_truth/manifest.json) – Ground Truth naszych wstrzykniętych ataków (Etap 1).
   * [data/received_from_enemy/detected_enemy_attacks.csv](data/received_from_enemy/detected_enemy_attacks.csv) – Wszystkie $117$ wykrytych wierszy ataków grupy przeciwnej z dokładnymi indeksami linii i czasami (Etap 2).
