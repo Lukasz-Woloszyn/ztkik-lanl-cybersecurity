@@ -1,4 +1,5 @@
 {
+  "analysis_mode": "STRICTLY_TIME_SORTED_DATASET (no line-order features used)",
   "dataset_meta": {
     "total_rows": 75868965,
     "t_min": 12096001,
@@ -122,26 +123,24 @@
     "non_standard_comps_sample": [],
     "elapsed_seconds": 253.59
   },
+  "graph_singleton_summary": {
+    "total_unique_pairs": 118413,
+    "total_singleton_rows": 7834,
+    "singleton_percentage": 0.01033
+  },
   "total_detected_injected_rows": 117,
   "scenarios": {
     "Scenario_1_Rapid_5Host_Fanout": {
       "num_injected_rows": 25,
       "num_users": 5,
       "users": [
-        "U8693",
+        "U257",
         "U3120",
         "U3254",
-        "U257",
+        "U8693",
         "U9517"
       ],
       "num_unique_computers": 25,
-      "orig_line_triggers": [
-        5000,
-        20000,
-        35000,
-        50000,
-        65000
-      ],
       "time_min": 12096001,
       "time_max": 12096009,
       "iat_mean_sec": 2.0,
@@ -150,11 +149,10 @@
       "ks_statistic": 0.6321,
       "ks_pvalue": 2.832345831348442e-08,
       "user_breakdown": {
-        "U8693": {
-          "orig_line_trigger": 5000,
-          "row_range": [
-            5000,
-            5004
+        "U257": {
+          "sorted_row_range": [
+            0,
+            196
           ],
           "num_events": 5,
           "timestamps": [
@@ -165,18 +163,17 @@
             12096009
           ],
           "computers": [
-            "C3930",
-            "C12820",
-            "C1503",
-            "C18078",
-            "C18017"
+            "C1225",
+            "C17759",
+            "C2321",
+            "C1815",
+            "C2854"
           ]
         },
         "U3120": {
-          "orig_line_trigger": 20000,
-          "row_range": [
-            20005,
-            20009
+          "sorted_row_range": [
+            0,
+            196
           ],
           "num_events": 5,
           "timestamps": [
@@ -195,10 +192,9 @@
           ]
         },
         "U3254": {
-          "orig_line_trigger": 35000,
-          "row_range": [
-            35010,
-            35014
+          "sorted_row_range": [
+            0,
+            196
           ],
           "num_events": 5,
           "timestamps": [
@@ -216,11 +212,10 @@
             "C1125"
           ]
         },
-        "U257": {
-          "orig_line_trigger": 50000,
-          "row_range": [
-            50015,
-            50019
+        "U8693": {
+          "sorted_row_range": [
+            0,
+            196
           ],
           "num_events": 5,
           "timestamps": [
@@ -231,18 +226,17 @@
             12096009
           ],
           "computers": [
-            "C1225",
-            "C17759",
-            "C2321",
-            "C1815",
-            "C2854"
+            "C3930",
+            "C12820",
+            "C1503",
+            "C18078",
+            "C18017"
           ]
         },
         "U9517": {
-          "orig_line_trigger": 65000,
-          "row_range": [
-            65020,
-            65024
+          "sorted_row_range": [
+            0,
+            196
           ],
           "num_events": 5,
           "timestamps": [
@@ -266,18 +260,12 @@
       "num_injected_rows": 12,
       "num_users": 4,
       "users": [
-        "U7321",
+        "U1062",
         "U1789",
         "U396",
-        "U1062"
+        "U7321"
       ],
       "num_unique_computers": 12,
-      "orig_line_triggers": [
-        80000,
-        100000,
-        120000,
-        140000
-      ],
       "time_min": 12096101,
       "time_max": 12096116,
       "iat_mean_sec": 7.5,
@@ -286,11 +274,10 @@
       "ks_statistic": 0.6068,
       "ks_pvalue": 0.0023653349169082028,
       "user_breakdown": {
-        "U7321": {
-          "orig_line_trigger": 80000,
-          "row_range": [
-            80025,
-            80027
+        "U1062": {
+          "sorted_row_range": [
+            2422,
+            2757
           ],
           "num_events": 3,
           "timestamps": [
@@ -299,16 +286,15 @@
             12096116
           ],
           "computers": [
-            "C7286",
-            "C4747",
-            "C5488"
+            "C4552",
+            "C2836",
+            "C5461"
           ]
         },
         "U1789": {
-          "orig_line_trigger": 100000,
-          "row_range": [
-            100028,
-            100030
+          "sorted_row_range": [
+            2422,
+            2757
           ],
           "num_events": 3,
           "timestamps": [
@@ -323,10 +309,9 @@
           ]
         },
         "U396": {
-          "orig_line_trigger": 120000,
-          "row_range": [
-            120031,
-            120033
+          "sorted_row_range": [
+            2422,
+            2757
           ],
           "num_events": 3,
           "timestamps": [
@@ -340,11 +325,10 @@
             "C9276"
           ]
         },
-        "U1062": {
-          "orig_line_trigger": 140000,
-          "row_range": [
-            140034,
-            140036
+        "U7321": {
+          "sorted_row_range": [
+            2422,
+            2757
           ],
           "num_events": 3,
           "timestamps": [
@@ -353,9 +337,9 @@
             12096116
           ],
           "computers": [
-            "C4552",
-            "C2836",
-            "C5461"
+            "C7286",
+            "C4747",
+            "C5488"
           ]
         }
       }
@@ -364,20 +348,13 @@
       "num_injected_rows": 5,
       "num_users": 5,
       "users": [
-        "U711",
+        "U1456",
+        "U2851",
         "U337",
         "U4077",
-        "U2851",
-        "U1456"
+        "U711"
       ],
       "num_unique_computers": 5,
-      "orig_line_triggers": [
-        160000,
-        175000,
-        190000,
-        205000,
-        220000
-      ],
       "time_min": 13096000,
       "time_max": 13110400,
       "iat_mean_sec": 3600.0,
@@ -386,25 +363,36 @@
       "ks_statistic": 0.6321,
       "ks_pvalue": 0.04491459144668871,
       "user_breakdown": {
-        "U711": {
-          "orig_line_trigger": 160000,
-          "row_range": [
-            160037,
-            160037
+        "U1456": {
+          "sorted_row_range": [
+            30968015,
+            30968015
           ],
           "num_events": 1,
           "timestamps": [
-            13096000
+            13110400
           ],
           "computers": [
-            "C16153"
+            "C16907"
+          ]
+        },
+        "U2851": {
+          "sorted_row_range": [
+            30828791,
+            30828791
+          ],
+          "num_events": 1,
+          "timestamps": [
+            13106800
+          ],
+          "computers": [
+            "C1296"
           ]
         },
         "U337": {
-          "orig_line_trigger": 175000,
-          "row_range": [
-            175038,
-            175038
+          "sorted_row_range": [
+            30477864,
+            30477864
           ],
           "num_events": 1,
           "timestamps": [
@@ -415,10 +403,9 @@
           ]
         },
         "U4077": {
-          "orig_line_trigger": 190000,
-          "row_range": [
-            190039,
-            190039
+          "sorted_row_range": [
+            30660123,
+            30660123
           ],
           "num_events": 1,
           "timestamps": [
@@ -428,32 +415,17 @@
             "C857"
           ]
         },
-        "U2851": {
-          "orig_line_trigger": 205000,
-          "row_range": [
-            205040,
-            205040
+        "U711": {
+          "sorted_row_range": [
+            30296808,
+            30296808
           ],
           "num_events": 1,
           "timestamps": [
-            13106800
+            13096000
           ],
           "computers": [
-            "C1296"
-          ]
-        },
-        "U1456": {
-          "orig_line_trigger": 220000,
-          "row_range": [
-            220041,
-            220041
-          ],
-          "num_events": 1,
-          "timestamps": [
-            13110400
-          ],
-          "computers": [
-            "C16907"
+            "C16153"
           ]
         }
       }
@@ -469,13 +441,6 @@
         "U972"
       ],
       "num_unique_computers": 74,
-      "orig_line_triggers": [
-        250000,
-        260000,
-        270000,
-        280000,
-        290000
-      ],
       "time_min": 12106801,
       "time_max": 13317601,
       "iat_mean_sec": 86400.0,
@@ -485,10 +450,9 @@
       "ks_pvalue": 1.2335304870867164e-27,
       "user_breakdown": {
         "U24": {
-          "orig_line_trigger": 250000,
-          "row_range": [
-            250042,
-            250056
+          "sorted_row_range": [
+            254226,
+            34995497
           ],
           "num_events": 15,
           "timestamps": [
@@ -527,10 +491,9 @@
           ]
         },
         "U2867": {
-          "orig_line_trigger": 260000,
-          "row_range": [
-            260057,
-            260071
+          "sorted_row_range": [
+            261550,
+            35003721
           ],
           "num_events": 15,
           "timestamps": [
@@ -569,10 +532,9 @@
           ]
         },
         "U7230": {
-          "orig_line_trigger": 270000,
-          "row_range": [
-            270072,
-            270086
+          "sorted_row_range": [
+            268753,
+            35011723
           ],
           "num_events": 15,
           "timestamps": [
@@ -611,10 +573,9 @@
           ]
         },
         "U9578": {
-          "orig_line_trigger": 280000,
-          "row_range": [
-            280087,
-            280101
+          "sorted_row_range": [
+            275898,
+            35019515
           ],
           "num_events": 15,
           "timestamps": [
@@ -653,10 +614,9 @@
           ]
         },
         "U972": {
-          "orig_line_trigger": 290000,
-          "row_range": [
-            290102,
-            290116
+          "sorted_row_range": [
+            283193,
+            35027442
           ],
           "num_events": 15,
           "timestamps": [
@@ -745,15 +705,15 @@
         "singleton_computers": 10,
         "singleton_ratio": 0.13513513513513514,
         "computer_entropy_bits": 1.6321,
-        "max_stream_displacement_sec": 111.0,
+        "temporal_regularity_index": 28.0,
         "injected_scenario": "Scenario_1_Rapid_5Host_Fanout",
         "iforest_label": -1,
-        "iforest_score": 0.7189,
+        "iforest_score": 0.7516,
         "lof_label": -1,
-        "lof_score": 6.4268,
+        "lof_score": 2.6518,
         "dbscan_cluster": -1,
-        "pca_1": 4.011621010658086,
-        "pca_2": 4.837187423327415
+        "pca_1": 13.323745006330219,
+        "pca_2": 3.2632833534207086
       },
       {
         "uid": 3120,
@@ -763,15 +723,15 @@
         "singleton_computers": 8,
         "singleton_ratio": 0.5,
         "computer_entropy_bits": 0.4243,
-        "max_stream_displacement_sec": 424.0,
+        "temporal_regularity_index": 28.0,
         "injected_scenario": "Scenario_1_Rapid_5Host_Fanout",
         "iforest_label": -1,
-        "iforest_score": 0.7171,
+        "iforest_score": 0.7432,
         "lof_label": -1,
-        "lof_score": 8.0789,
+        "lof_score": 2.7258,
         "dbscan_cluster": -1,
-        "pca_1": 0.245618628242933,
-        "pca_2": 7.120478072702725
+        "pca_1": 11.995198980873917,
+        "pca_2": 7.260161988654318
       },
       {
         "uid": 3254,
@@ -781,15 +741,15 @@
         "singleton_computers": 6,
         "singleton_ratio": 0.5454545454545454,
         "computer_entropy_bits": 0.8916,
-        "max_stream_displacement_sec": 729.0,
+        "temporal_regularity_index": 28.0,
         "injected_scenario": "Scenario_1_Rapid_5Host_Fanout",
         "iforest_label": -1,
-        "iforest_score": 0.7115,
+        "iforest_score": 0.732,
         "lof_label": -1,
-        "lof_score": 8.0706,
+        "lof_score": 2.7215,
         "dbscan_cluster": -1,
-        "pca_1": 0.02902218178339648,
-        "pca_2": 7.2720535920406375
+        "pca_1": 11.75081322119278,
+        "pca_2": 7.390999388331877
       },
       {
         "uid": 9517,
@@ -799,15 +759,15 @@
         "singleton_computers": 6,
         "singleton_ratio": 0.4,
         "computer_entropy_bits": 1.2988,
-        "max_stream_displacement_sec": 1364.0,
+        "temporal_regularity_index": 28.0,
         "injected_scenario": "Scenario_1_Rapid_5Host_Fanout",
-        "iforest_label": 1,
-        "iforest_score": 0.6871,
+        "iforest_label": -1,
+        "iforest_score": 0.7083,
         "lof_label": -1,
-        "lof_score": 6.6459,
+        "lof_score": 2.7074,
         "dbscan_cluster": -1,
-        "pca_1": 0.836167286584787,
-        "pca_2": 6.918340051587038
+        "pca_1": 11.793589268460078,
+        "pca_2": 6.4110641419502326
       },
       {
         "uid": 257,
@@ -817,15 +777,15 @@
         "singleton_computers": 6,
         "singleton_ratio": 0.35294117647058826,
         "computer_entropy_bits": 2.1078,
-        "max_stream_displacement_sec": 1048.0,
+        "temporal_regularity_index": 28.0,
         "injected_scenario": "Scenario_1_Rapid_5Host_Fanout",
         "iforest_label": 1,
-        "iforest_score": 0.687,
+        "iforest_score": 0.7035,
         "lof_label": -1,
-        "lof_score": 8.6911,
+        "lof_score": 2.7023,
         "dbscan_cluster": -1,
-        "pca_1": 1.7116753163599887,
-        "pca_2": 6.561577956980131
+        "pca_1": 12.189610215961185,
+        "pca_2": 5.572945466232073
       },
       {
         "uid": 1789,
@@ -835,15 +795,15 @@
         "singleton_computers": 3,
         "singleton_ratio": 0.0375,
         "computer_entropy_bits": 5.5647,
-        "max_stream_displacement_sec": 2056.0,
+        "temporal_regularity_index": 12.6667,
         "injected_scenario": "Scenario_2_Sync_3Host_Burst",
         "iforest_label": -1,
-        "iforest_score": 0.7189,
-        "lof_label": -1,
-        "lof_score": 5.9696,
+        "iforest_score": 0.7413,
+        "lof_label": 1,
+        "lof_score": 1.851,
         "dbscan_cluster": -1,
-        "pca_1": 5.9584120407029415,
-        "pca_2": 5.105577579693158
+        "pca_1": 8.559421083445205,
+        "pca_2": -1.1557891548812655
       },
       {
         "uid": 7321,
@@ -853,15 +813,15 @@
         "singleton_computers": 3,
         "singleton_ratio": 0.2727272727272727,
         "computer_entropy_bits": 1.6546,
-        "max_stream_displacement_sec": 1640.0,
+        "temporal_regularity_index": 12.6667,
         "injected_scenario": "Scenario_2_Sync_3Host_Burst",
         "iforest_label": 1,
-        "iforest_score": 0.645,
-        "lof_label": -1,
-        "lof_score": 6.5564,
+        "iforest_score": 0.6554,
+        "lof_label": 1,
+        "lof_score": 1.491,
         "dbscan_cluster": -1,
-        "pca_1": 1.354687245315673,
-        "pca_2": 5.316443661670283
+        "pca_1": 5.960507451476096,
+        "pca_2": 2.5920845411017894
       },
       {
         "uid": 396,
@@ -871,15 +831,15 @@
         "singleton_computers": 3,
         "singleton_ratio": 0.25,
         "computer_entropy_bits": 1.5838,
-        "max_stream_displacement_sec": 2464.5,
+        "temporal_regularity_index": 12.6667,
         "injected_scenario": "Scenario_2_Sync_3Host_Burst",
         "iforest_label": 1,
-        "iforest_score": 0.6212,
-        "lof_label": -1,
-        "lof_score": 6.7063,
+        "iforest_score": 0.6291,
+        "lof_label": 1,
+        "lof_score": 1.4618,
         "dbscan_cluster": -1,
-        "pca_1": 0.9493594780725838,
-        "pca_2": 5.659399296390083
+        "pca_1": 5.775390558608752,
+        "pca_2": 3.0173426755232513
       },
       {
         "uid": 1062,
@@ -889,33 +849,15 @@
         "singleton_computers": 3,
         "singleton_ratio": 0.21428571428571427,
         "computer_entropy_bits": 1.8773,
-        "max_stream_displacement_sec": 2888.5,
+        "temporal_regularity_index": 12.6667,
         "injected_scenario": "Scenario_2_Sync_3Host_Burst",
         "iforest_label": 1,
-        "iforest_score": 0.6208,
-        "lof_label": -1,
-        "lof_score": 6.8885,
+        "iforest_score": 0.6244,
+        "lof_label": 1,
+        "lof_score": 1.4539,
         "dbscan_cluster": -1,
-        "pca_1": 1.4324161413681973,
-        "pca_2": 5.563246476220947
-      },
-      {
-        "uid": 1456,
-        "user": "U1456",
-        "total_events": 101842,
-        "unique_computers": 15,
-        "singleton_computers": 1,
-        "singleton_ratio": 0.06666666666666667,
-        "computer_entropy_bits": 1.4706,
-        "max_stream_displacement_sec": 1005073.0,
-        "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
-        "iforest_label": 1,
-        "iforest_score": 0.6451,
-        "lof_label": -1,
-        "lof_score": 8.2816,
-        "dbscan_cluster": -1,
-        "pca_1": 2.424002256823326,
-        "pca_2": 6.160937862651161
+        "pca_1": 5.9568657777662475,
+        "pca_2": 2.551242886397775
       },
       {
         "uid": 337,
@@ -925,15 +867,33 @@
         "singleton_computers": 2,
         "singleton_ratio": 0.16666666666666666,
         "computer_entropy_bits": 1.239,
-        "max_stream_displacement_sec": 996201.0,
+        "temporal_regularity_index": 12.5,
         "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
         "iforest_label": 1,
-        "iforest_score": 0.6335,
-        "lof_label": -1,
-        "lof_score": 8.3079,
+        "iforest_score": 0.6329,
+        "lof_label": 1,
+        "lof_score": 1.5205,
         "dbscan_cluster": -1,
-        "pca_1": 1.6434579008830772,
-        "pca_2": 7.327121924549981
+        "pca_1": 5.17887519728911,
+        "pca_2": 2.171883623652686
+      },
+      {
+        "uid": 1456,
+        "user": "U1456",
+        "total_events": 101842,
+        "unique_computers": 15,
+        "singleton_computers": 1,
+        "singleton_ratio": 0.06666666666666667,
+        "computer_entropy_bits": 1.4706,
+        "temporal_regularity_index": 12.5,
+        "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
+        "iforest_label": 1,
+        "iforest_score": 0.6308,
+        "lof_label": 1,
+        "lof_score": 1.6293,
+        "dbscan_cluster": -1,
+        "pca_1": 4.881552732841228,
+        "pca_2": 0.8473834870769251
       },
       {
         "uid": 4077,
@@ -943,15 +903,15 @@
         "singleton_computers": 1,
         "singleton_ratio": 0.05263157894736842,
         "computer_entropy_bits": 2.5932,
-        "max_stream_displacement_sec": 999165.0,
+        "temporal_regularity_index": 12.5,
         "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
         "iforest_label": 1,
-        "iforest_score": 0.6235,
-        "lof_label": -1,
-        "lof_score": 8.733,
+        "iforest_score": 0.6067,
+        "lof_label": 1,
+        "lof_score": 1.5392,
         "dbscan_cluster": -1,
-        "pca_1": 2.7707522718186612,
-        "pca_2": 6.562029939846383
+        "pca_1": 5.327854813997177,
+        "pca_2": 0.8106078897328822
       },
       {
         "uid": 711,
@@ -961,15 +921,15 @@
         "singleton_computers": 1,
         "singleton_ratio": 0.07692307692307693,
         "computer_entropy_bits": 1.5509,
-        "max_stream_displacement_sec": 993263.5,
+        "temporal_regularity_index": 12.5,
         "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
         "iforest_label": 1,
-        "iforest_score": 0.6128,
-        "lof_label": -1,
-        "lof_score": 9.6109,
+        "iforest_score": 0.599,
+        "lof_label": 1,
+        "lof_score": 1.5728,
         "dbscan_cluster": -1,
-        "pca_1": 1.8772821324311282,
-        "pca_2": 6.418760726412074
+        "pca_1": 4.696638843211964,
+        "pca_2": 1.4203637971481584
       },
       {
         "uid": 2851,
@@ -979,15 +939,15 @@
         "singleton_computers": 1,
         "singleton_ratio": 0.047619047619047616,
         "computer_entropy_bits": 1.3165,
-        "max_stream_displacement_sec": 1002127.0,
+        "temporal_regularity_index": 12.5,
         "injected_scenario": "Scenario_3_Hourly_Distributed_Beacon",
         "iforest_label": 1,
-        "iforest_score": 0.6096,
-        "lof_label": -1,
-        "lof_score": 9.632,
+        "iforest_score": 0.5948,
+        "lof_label": 1,
+        "lof_score": 1.5656,
         "dbscan_cluster": -1,
-        "pca_1": 1.9009680517522634,
-        "pca_2": 6.522583168190731
+        "pca_1": 4.771266779613003,
+        "pca_2": 1.4613866995854294
       },
       {
         "uid": 972,
@@ -997,15 +957,15 @@
         "singleton_computers": 15,
         "singleton_ratio": 0.8823529411764706,
         "computer_entropy_bits": 0.0556,
-        "max_stream_displacement_sec": 647855.5,
+        "temporal_regularity_index": 33.0,
         "injected_scenario": "Scenario_4_Daily_24h_C2_Beaconing",
         "iforest_label": -1,
-        "iforest_score": 0.7709,
+        "iforest_score": 0.7757,
         "lof_label": -1,
-        "lof_score": 5.0346,
+        "lof_score": 3.1418,
         "dbscan_cluster": -1,
-        "pca_1": 0.3561847929227856,
-        "pca_2": 13.039481175061235
+        "pca_1": 15.125733490114602,
+        "pca_2": 10.015150127816787
       },
       {
         "uid": 7230,
@@ -1015,15 +975,15 @@
         "singleton_computers": 15,
         "singleton_ratio": 0.5769230769230769,
         "computer_entropy_bits": 0.475,
-        "max_stream_displacement_sec": 647972.5,
+        "temporal_regularity_index": 33.0,
         "injected_scenario": "Scenario_4_Daily_24h_C2_Beaconing",
         "iforest_label": -1,
-        "iforest_score": 0.7615,
+        "iforest_score": 0.7638,
         "lof_label": -1,
-        "lof_score": 6.1542,
+        "lof_score": 3.0933,
         "dbscan_cluster": -1,
-        "pca_1": 1.602140855995084,
-        "pca_2": 11.549949414157657
+        "pca_1": 14.906496766684329,
+        "pca_2": 8.13545761550694
       },
       {
         "uid": 24,
@@ -1033,15 +993,15 @@
         "singleton_computers": 18,
         "singleton_ratio": 0.6666666666666666,
         "computer_entropy_bits": 0.9766,
-        "max_stream_displacement_sec": 648091.0,
+        "temporal_regularity_index": 29.0,
         "injected_scenario": "Scenario_4_Daily_24h_C2_Beaconing",
         "iforest_label": -1,
-        "iforest_score": 0.7576,
+        "iforest_score": 0.7597,
         "lof_label": -1,
-        "lof_score": 5.5027,
+        "lof_score": 2.7438,
         "dbscan_cluster": -1,
-        "pca_1": 1.7238727988149976,
-        "pca_2": 12.364032445589581
+        "pca_1": 14.212115543619271,
+        "pca_2": 7.919695994733346
       },
       {
         "uid": 9578,
@@ -1051,15 +1011,15 @@
         "singleton_computers": 15,
         "singleton_ratio": 0.6521739130434783,
         "computer_entropy_bits": 1.1319,
-        "max_stream_displacement_sec": 647915.0,
+        "temporal_regularity_index": 33.0,
         "injected_scenario": "Scenario_4_Daily_24h_C2_Beaconing",
         "iforest_label": -1,
-        "iforest_score": 0.7507,
+        "iforest_score": 0.7535,
         "lof_label": -1,
-        "lof_score": 5.4985,
+        "lof_score": 3.0918,
         "dbscan_cluster": -1,
-        "pca_1": 1.5880972540434102,
-        "pca_2": 12.074763257242584
+        "pca_1": 15.23014545963799,
+        "pca_2": 8.461800914507698
       },
       {
         "uid": 2867,
@@ -1069,15 +1029,15 @@
         "singleton_computers": 15,
         "singleton_ratio": 0.5769230769230769,
         "computer_entropy_bits": 1.4873,
-        "max_stream_displacement_sec": 648032.0,
+        "temporal_regularity_index": 33.0,
         "injected_scenario": "Scenario_4_Daily_24h_C2_Beaconing",
         "iforest_label": -1,
-        "iforest_score": 0.7483,
+        "iforest_score": 0.7499,
         "lof_label": -1,
-        "lof_score": 5.4964,
+        "lof_score": 3.0811,
         "dbscan_cluster": -1,
-        "pca_1": 2.0707718464609317,
-        "pca_2": 11.737058427498994
+        "pca_1": 15.301490425917388,
+        "pca_2": 7.879740830082466
       }
     ],
     "figure_path": "C:\\Users\\Lukas\\Desktop\\cyberbezpieczeństwo 2025-2027\\semestr 3\\ZTKIK - Zaawansowane Techniki Kryptografii i Kryptoanalizy\\Projekt\\reports\\figures\\enemy_fig3_ml_pca_and_bipartite_graph.png"
